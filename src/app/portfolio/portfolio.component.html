@@ -1,0 +1,8 @@
+<div class="masonry scene_element scene_element-fadeinup">
+  <div *ngFor="let project of projectsService.projects" class="item">
+    <a routerLink="/project/{{project.id}}">
+        <img [src]="project.coverPhoto" [alt]="project.alt">
+        <a class="-pt-mono">{{project.title}}</a>
+    </a>
+  </div>
+</div>

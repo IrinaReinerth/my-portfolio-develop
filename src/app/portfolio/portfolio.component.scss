@@ -1,0 +1,29 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/breakpoints";
+
+.masonry {
+    column-count:3;
+    column-gap:5rem;
+  
+  .item {
+    display: inline-block;
+    margin: 0 0 5rem;
+    width: 100%;
+
+    img {
+        margin-bottom: 2rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm){
+    .masonry {
+        column-count: 1 !important;
+    }
+}
+@include media-breakpoint-down(md){
+    .masonry {
+        column-count: 2;
+    }
+}

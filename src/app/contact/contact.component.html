@@ -1,0 +1,26 @@
+<div class="row contacts scene_element scene_element-fadeinup">
+    <div class="col-12 offset-md-3 col-md-6">
+       <img [src]="contactPhotoUrl" alt="contact"/>
+    </div>
+    <div class="field">
+        <a href="mailto:irina.reinerth@gmail.com"><button type="submit" class="button black is-danger is-large">{{buttonNname}}</button></a>
+    </div>
+    <div class="flex-social-wrap">
+      <div class="flex">
+        <svg version="1.1" id="locationIco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+        <line style="fill:none;stroke:#556080;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" x1="29" y1="28" x2="29" y2="57"/>
+        <circle style="fill:#000;" cx="29" cy="14" r="14"/>
+        <circle style="fill:#fff;" cx="24" cy="10" r="3"/>
+        </svg>
+        <span>{{myLocation}}</span>
+      </div>
+      <div class="flex">
+          <span *ngFor="let social of socials">
+              <a href="{{social.socialIcoLink}}" target="_blank">
+                <img class="socialIco" [src]="social.socialIcoUrl"/>
+              </a>
+          </span>
+      </div>
+    </div>
+</div>

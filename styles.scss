@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+
+@font-face {
+  font-family: PT Mono;
+  src: url("assets/fonts/PTMono-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("assets/fonts/Raleway-Thin.ttf");
+}
+
+html, body {
+    font-family: 'Raleway' !important;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0px 30px;
+    min-height: 100%;
+}
+
+/* Colors */
+$black : #333;
+$lightgrey: #eee;
+$white : #ffffff;
+$whiteTransparent: #ffffffe6;
+$green: #039156e6;
+
+/* Fonts */
+h1, h2, h3, p, a {
+    color: $black !important;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold !important;
+    font-size: 1.3rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.-pt-mono {
+    font-family: 'PT Mono';
+    max-width: 100%;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+    letter-spacing: 0.5em;
+    line-height: 0.5;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+
+a:hover, .active-link {
+    opacity: 0.5;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+ul li, .list-inline-item {
+    list-style: none;
+    margin-right: 2rem !important;
+
+    &:last-child {
+        margin-right: 0 !important;
+    }
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+}
+
+nav, .footer {
+    background-color: $white;
+}
+
+button.black {
+    background-color: $black;
+    border: none;
+    color: white;
+    padding: 4px 50px;
+    margin: 20px 0px;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+button.white {
+    background-color: white;
+    border: 1px solid #333;
+    color: #333;
+    margin-right: 20px;
+}
+
+/*Responsive*/
+
+@include media-breakpoint-down(md) {
+    html, body {
+        padding: 0px 8px;
+    }
+
+    .scene_element {
+        padding: 20px 0;
+    }
+
+    .-pt-mono {
+        font-size: 0.8rem;
+    }
+}
+
+/*Animation*/
+
+.scene_element {
+    animation-duration: 0.9s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    padding-bottom: 40px ;
+  }
+
+ /** An element that fades in and slides up */
+ .scene_element-fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 10%, 0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }

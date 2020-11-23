@@ -1,0 +1,57 @@
+$black : #333;
+$lightgrey: #eee; 
+
+.flex-column {
+    display: flex;
+    flex-flow: column;
+}
+
+.field {
+    width: 100%;
+    text-align: center;
+
+    button.black {
+        background-color: $black;
+        border: none;
+        color: white;
+        padding: 4px 50px;
+        margin: 20px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    // input, textarea {
+    //     width: 100%;
+    //     margin-bottom: 24px;
+    //     border: 1px solid $lightgrey;
+    // }
+
+    // textarea {
+    //     min-height: 100px;
+    // }
+
+    
+}
+.flex-social-wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#locationIco {
+    width: 24px;
+}
+.socialIco {
+    width: 20px;
+    margin: 24px 4px;
+}
+

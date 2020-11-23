@@ -1,0 +1,33 @@
+<div class="row aboutMe scene_element scene_element-fadeinup">
+    <div class="col-12 col-md-6 col-lg-5">
+      <img [src]="myPhotoUrl" alt="Irina Reinerth Portret">
+    </div>
+    <div class="col-12 col-md-6 col-lg-7">
+        <h4 class="mobile-margin-top">{{myStory}}</h4>
+        <p *ngFor="let paragraf of paragrafs">
+            {{paragraf}}
+        </p>
+    </div>
+</div>
+
+<div class="row experience scene_element scene_element-fadeinup">
+    <div  class="col-12 col-md-5">
+        <h4>EXPERIENCE -</h4>
+        <p *ngFor="let experience of experiences">
+          <span>{{experience.year}} </span>
+          <span>{{experience.name}}</span>
+        </p>
+    </div>
+    <div  class="col-12 col-md-5">
+        <h4 class="mobile-margin-top">EDUCATION -</h4>
+        <p *ngFor="let education of educations">
+          <span>{{education.year}} </span>
+          <span>{{education.name}}</span>
+        </p>
+      </div>
+</div>
+
+<div class="row skills scene_element scene_element-fadeinup">
+  <div class="col-12 col-md-5 offset-md-5"><h4>SKILLS-</h4></div>
+  <p>{{skills}}</p>
+</div>

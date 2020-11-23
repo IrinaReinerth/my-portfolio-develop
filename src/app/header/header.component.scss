@@ -1,0 +1,19 @@
+$whiteTransparent: #ffffffe6;
+$lightgrey: #eee;
+
+nav {
+    background-color: $whiteTransparent;
+    padding: 1.5rem 0rem;
+}
+.logo-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+}
+.active-link {
+    border-bottom: 1px solid $lightgrey;
+}
