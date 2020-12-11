@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
-  myPhotoUrl = "assets/img/me2.jpg";
+  myPhotoUrl = "assets/img/me.jpg";
   myStory = "My Story -";
   paragrafs = [
      'I am an Interaction Engineer and Usability specialist with a passion to bring clear logic, good user experience, and a pleasant UI to web-based platforms.',
