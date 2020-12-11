@@ -22,14 +22,6 @@ export class ContactComponent implements OnInit {
   buttonNname = "Email me";
   socials = [
     {
-      socialIcoLink : "https://www.behance.net/irinaziborova",
-      socialIcoUrl : "assets/img/be.png"
-    },
-    {
-      socialIcoLink : "https://www.instagram.com/irinareinerth",
-      socialIcoUrl : "assets/img/insta.png"
-    },
-    {
       socialIcoLink : "https://www.linkedin.com/in/ziborovairina/",
       socialIcoUrl : "assets/img/in.png"
     }

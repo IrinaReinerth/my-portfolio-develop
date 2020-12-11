@@ -16,14 +16,6 @@ export class FooterComponent implements OnInit {
   contact = 'How to contact';
   links = [
     {
-      url : 'https://www.behance.net/irinaziborova',
-      title: 'Behance ‣'
-    },
-    {
-      url : 'https://www.instagram.com/irinareinerth/',
-      title: 'Instagram ‣'
-    },
-    {
       url : 'https://www.linkedin.com/in/ziborovairina/',
       title: 'LinkedIn ‣'
     }

@@ -12,6 +12,27 @@ export class ProjectsService {
 
     constructor() {
       this.projects.push({
+          id: 11,
+          coverPhoto: "assets/img/penenza_cover.jpg",
+          photoUrl : ["assets/img/penenza_cover.jpg", "assets/img/penenza1.png", "assets/img/penenza2.png"],
+          title: "Trader Account UX and UI design",
+          alt: "Trader Account UX and UI design",
+          description: ["Penenza is a russian project to connect governmental tender investors and borrowers without banks.",
+              "My role as an UX and UI designer was to create a self explanatory investor account and financial detalization sheet",
+              "Specific of the design is that money flow can have 3 states:",
+              "1. accrued interest",
+              "2. paid out",
+              "3. awaiting payment",
+              "4. fully paid",
+              "My job was to simplify for an investor visual definition of these payment states.",
+              "To create the UI I used Figma this time."
+              ],
+          projectTags : ["Finance Platform",
+          "UI in Figma",
+          "Customer dashboard design"
+          ]
+      });
+      this.projects.push({
           id: 10,
           coverPhoto: "assets/img/Redesign_VM/cover3.jpg",
           photoUrl : ["assets/img/Redesign_VM/cover4.jpg", "assets/img/Redesign_VM/2.prototypingArtboard.jpg", "assets/img/Redesign_VM/3.testingjpg.jpg", "assets/img/Redesign_VM/HP_old2.jpg", "assets/img/Redesign_VM/HP_new3.jpg", "assets/img/Redesign_VM/GP_old2.jpg", "assets/img/Redesign_VM/GP_new3.jpg", "assets/img/Redesign_VM/DP_old3.jpg", "assets/img/Redesign_VM/DP_new4.jpg", "assets/img/Redesign_VM/more.jpg"],

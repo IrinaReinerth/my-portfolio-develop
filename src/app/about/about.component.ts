@@ -44,11 +44,15 @@ export class AboutComponent implements OnInit {
     },
     {
       year : '2017',
-      name : 'Avanta Digital, Web-designer'
+      name : 'Netcracker , UX&UI Designer'
+    },
+    {
+      year : '2017',
+      name : 'Avanta Digital, Web & graphic designer'
     },
     {
       year : '2012-2017',
-      name : 'Reksoft, project assistant'
+      name : 'Reksoft, project coordinator'
     }
   ];
   skills = "#HTML #CSS #JavaScript #bootstrap #Angular #Java #AdobeCC #AdobePhotoshop #AdobeIllustrator #Sketch #Figma #InVision #UI #UX #GraphicDesign #GifAnimation #WebDesign #ResponsiveDesign #CrosBrowserDesign #GitHub #Bitbucket #InteliJ";
