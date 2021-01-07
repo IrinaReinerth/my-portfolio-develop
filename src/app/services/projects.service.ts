@@ -11,33 +11,13 @@ export class ProjectsService {
     projects: Project[] = [];
 
     constructor() {
+
       this.projects.push({
           id: 11,
-          coverPhoto: "assets/img/penenza_cover.jpg",
-          photoUrl : ["assets/img/penenza_cover.jpg", "assets/img/penenza1.png", "assets/img/penenza2.png"],
-          title: "Trader Account UX and UI design",
-          alt: "Trader Account UX and UI design",
-          description: ["Penenza is a russian project to connect governmental tender investors and borrowers without banks.",
-              "My role as an UX and UI designer was to create a self explanatory investor account and financial detalization sheet",
-              "Specific of the design is that money flow can have 3 states:",
-              "1. accrued interest",
-              "2. paid out",
-              "3. awaiting payment",
-              "4. fully paid",
-              "My job was to simplify for an investor visual definition of these payment states.",
-              "To create the UI I used Figma this time."
-              ],
-          projectTags : ["Finance Platform",
-          "UI in Figma",
-          "Customer dashboard design"
-          ]
-      });
-      this.projects.push({
-          id: 10,
           coverPhoto: "assets/img/Redesign_VM/cover3.jpg",
           photoUrl : ["assets/img/Redesign_VM/cover4.jpg", "assets/img/Redesign_VM/2.prototypingArtboard.jpg", "assets/img/Redesign_VM/3.testingjpg.jpg", "assets/img/Redesign_VM/HP_old2.jpg", "assets/img/Redesign_VM/HP_new3.jpg", "assets/img/Redesign_VM/GP_old2.jpg", "assets/img/Redesign_VM/GP_new3.jpg", "assets/img/Redesign_VM/DP_old3.jpg", "assets/img/Redesign_VM/DP_new4.jpg", "assets/img/Redesign_VM/more.jpg"],
-          title: "Cohesive Redesign of the platform",
-          alt: "Platform Redesign",
+          title: "E-commerce platform Redesign",
+          alt: "E-commerce platform Redesign",
           description: ["goal: Develop a fully new design concept based on the best UX & UI practices",
               "Elements created for the project: Home page, Grid Page, Product detail page, Inspiration Articles page, Account area",
               "During this project we followed the 4 steps process: Understanding the user, Ideation, Prototyping, Testing, Repeat.",
@@ -57,24 +37,125 @@ export class ProjectsService {
           "User testing, usability testing, AB testing",
           "competitor analysis"]
       });
+
+      this.projects.push({
+          id: 10,
+          coverPhoto: "assets/img/Style_guide/cover3.jpg",
+          photoUrl: ["assets/img/Style_guide/cover3.jpg",
+              "assets/img/Style_guide/colors.jpg",
+              "assets/img/Style_guide/buttons.jpg",
+              "assets/img/Style_guide/typography.jpg",
+              "assets/img/Style_guide/screen_breaks.jpg",
+              "assets/img/Style_guide/sketch_2.jpg"],
+          title: "Style guide development",
+          alt: "Style guide development",
+          description: ["Problem: No consistency in design",
+              "Solution: Created a design library for designers and developers",
+              "Elements: Colors, Buttons, Typography, Spaces, Shapes and Forms, Checkboxes, and Radio buttons, icons.",
+              "Components: Login form, Toast massages, 404 page, product item.",
+              "Result: -Fully functional cloud-based Sketch library for fast hi-fi prototyping by Designers.",
+              "-CSS and JS library inside the frontend project for inbuild styles. The element gets CSS style automaticaly based on the aplied HTML classes to this element.",
+              "-A landing page with all use cases of elements and components coded and ready to be copied and pasted in the code by developers",
+              "Timeline and team: 2 months, 2 interaction engineers"],
+          projectTags: ["Design language development",
+              "Responsive design",
+              "Core components design",
+              "Sketch",
+              "HTML",
+              "SASS",
+              "JavaScript",
+              "JSP"]
+      });
+
+
+      this.projects.push({
+          id: 9,
+          coverPhoto: "assets/img/filters2.jpg",
+          photoUrl : ["assets/img/filters2.jpg"],
+          title: "Mobile Filters design and implementation",
+          alt: "Mobile Filters",
+          description: ["Navigation and filtering among many fashion articles include seasonality, occasion, style filters. Filter panel is designed universally for desktop and smartphone. Front-end implementation also was provided. Filters are always a very interactive section, therefore I liked to work on usability and interaction design at this project. Collapsed/ expanded filters, buttons to increase a list of options to a filter,  active filter status in collapsed and expanded modes and removing active filters globally or from a specific filter. Those behaviors were the biggest things to think about and I like the final result."],
+          projectTags : ["Filter’s panel",
+              "Intraction design",
+              "HTML, CSS, JavaScript",
+              "Collapsed filters"
+              ]
+      });
+
+
+
+
+      this.projects.push({
+          id: 8,
+          coverPhoto: "assets/img/1.jpg",
+          photoUrl : ["assets/img/1.jpg","assets/img/4.jpg", "assets/img/3.jpg","assets/img/2.jpg"],
+          title: "E-commerce site Design",
+          alt: "E-commerce site Nicetop photo",
+          description: ["Nicetop.ru is a Russian e-commerce site for a woman, man, and children fashion. The site is made in white, black and ight green colors. The design foresees a desktop and a mobile layout. The design solution is based on the project prescription from a stakeholder and consists of all core elements and site pages namely Home page, Results page, Brand page, Item detail page, and others. Many complementary sectors like delivery, payment, personal account sections, and a page with size tables were also developed during the project."],
+          projectTags : ["Design language development",
+          "Responsive design",
+          "Core compoents design",
+          "Mobile Filters",
+          "Grid Item and a quick viw",
+          "Home page, Results page, Item detail page design",
+          "white interface with black and green accents",
+          "E-commerce design",
+          "AdobePhotoshop"]
+      });
+
+      // this.projects.push({
+      //     id: 10,
+      //     coverPhoto: "assets/img/Voice_Gift/1.Singers.png",
+      //     photoUrl: ["assets/img/Voice_Gift/1.Singers.png",
+      //         "assets/img/Voice_Gift/2.Info.png",
+      //         "assets/img/Voice_Gift/2.1.png",
+      //         "assets/img/Voice_Gift/3.Confirmation.png",
+      //         "assets/img/Voice_Gift/3.1Video_preview.png",
+      //         "assets/img/Voice_Gift/3.2Payment.png",
+      //         "assets/img/Voice_Gift/4.Payment_confirmed.png",
+      //         "assets/img/Voice_Gift/Homepage.png"],
+      //     title: "Voice gift service",
+      //     alt: "Voice gift service",
+      //     description: ["Online service offers users to buy a personalised voice message: \
+      //     Song, poem or anything else from a professional artists.\
+      //     I wanted to create a simple and interesting design with a clear user flow starting \
+      //     at Introduction to the service on the Home page, choosing the artist and the message \
+      //     and purchasing the gift. I like the filter system that I came up with in this project. \
+      //     We needed to filter artists by gender and type of art.\
+      //     I was able to create a rotation circle filters around the video block.",
+      //     "You can find below the animation showing my idea.\
+      //     I like the playful mood that the design brings and how clean design collaborates \
+      //     with the colours in this project."],
+      //     projectTags : ["desktop application",
+      //     "Purchase user flow",
+      //     "Playful design",
+      //     "Music goods and services",
+      //     "Unusual filter system",
+      //     "Figma"]
+      // });
+
+      this.projects.push({
+          id: 7,
+          coverPhoto: "assets/img/dindin_1.png",
+          photoUrl : ["assets/img/dindin_1.png", "assets/img/dindin_2.jpg", "assets/img/dindin_3.png", "assets/img/dindin_4.jpg"],
+          title: "web-application design for Food sharing ",
+          alt: "web-application design for Food sharing ",
+          description: ["Din-Din is a project for students community to find new people trough sharing dinners together.",
+              "My role as an UX and UI designer was to create a self explanatory web-servis where a user can",
+              "1. Publish an event and all information about his dinner meal",
+              "2. Invite, check, accept or decline guests",
+              "3. See events next to his location and apply for them",
+              "I not only created a design, but also used knowladge of HTML, CSS and Bootstrap framework for fast prototyping"
+              ],
+          projectTags : ["Web application design",
+          "HTMP, CSS, Bootstrap",
+          "Food and events"
+          ]
+      });
+
+
         this.projects.push({
-            id: 9,
-            coverPhoto: "assets/img/Andeor.jpg",
-            photoUrl : ["assets/img/Andeor.jpg", "assets/img/andeor2.jpg", "assets/img/andeor3.jpg" ],
-            title: "Dance School web-site design",
-            alt: "Dance School Site",
-            description: ["Responsive design and layout for a dancing school. Made in dark colours with the use of black and white photos to stand out the chamber theater atmosphere. You will find the main information on the site about dancing classes, groups and projects, reviews, photos, and a contact form."],
-            projectTags : ["Dancing school web-design",
-            "Responsive design and layout",
-            "Dark interface",
-            "One page site",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Bootstrap"]
-        });
-        this.projects.push({
-            id: 8,
+            id: 6,
             coverPhoto: "assets/img/night_guide/cover.jpg",
             photoUrl: ["assets/img/night_guide/cover.jpg",
                 "assets/img/night_guide/map.jpg",
@@ -98,36 +179,8 @@ export class ProjectsService {
                 "dontMakeMeThink",
                 "Figma"]
         });
-        this.projects.push({
-            id: 7,
-            coverPhoto: "assets/img/Voice_Gift/1.Singers.png",
-            photoUrl: ["assets/img/Voice_Gift/1.Singers.png",
-                "assets/img/Voice_Gift/2.Info.png",
-                "assets/img/Voice_Gift/2.1.png",
-                "assets/img/Voice_Gift/3.Confirmation.png",
-                "assets/img/Voice_Gift/3.1Video_preview.png",
-                "assets/img/Voice_Gift/3.2Payment.png",
-                "assets/img/Voice_Gift/4.Payment_confirmed.png",
-                "assets/img/Voice_Gift/Homepage.png"],
-            title: "Voice gift service",
-            alt: "Voice gift service",
-            description: ["Online service offers users to buy a personalised voice message: \
-            Song, poem or anything else from a professional artists.\
-            I wanted to create a simple and interesting design with a clear user flow starting \
-            at Introduction to the service on the Home page, choosing the artist and the message \
-            and purchasing the gift. I like the filter system that I came up with in this project. \
-            We needed to filter artists by gender and type of art.\
-            I was able to create a rotation circle filters around the video block.",
-            "You can find below the animation showing my idea.\
-            I like the playful mood that the design brings and how clean design collaborates \
-            with the colours in this project."],
-            projectTags : ["desktop application",
-            "Purchase user flow",
-            "Playful design",
-            "Music goods and services",
-            "Unusual filter system",
-            "Figma"]
-        });
+
+
         // this.projects.push({
         //     id: 9,
         //     photoUrl : ["assets/img/Newsletter2.jpg"],
@@ -146,45 +199,20 @@ export class ProjectsService {
         //  });
 
         this.projects.push({
-            id: 6,
-            coverPhoto: "assets/img/filters2.jpg",
-            photoUrl : ["assets/img/filters2.jpg"],
-            title: "Mobile Filters design and implementation",
-            alt: "Mobile Filters",
-            description: ["Navigation and filtering among many fashion articles include seasonality, occasion, style filters. Filter panel is designed universally for desktop and smartphone. Front-end implementation also was provided. Filters are always a very interactive section, therefore I liked to work on usability and interaction design at this project. Collapsed/ expanded filters, buttons to increase a list of options to a filter,  active filter status in collapsed and expanded modes and removing active filters globally or from a specific filter. Those behaviors were the biggest things to think about and I like the final result."],
-            projectTags : ["Filter’s panel",
-                "Intraction design",
-                "HTML, CSS, JavaScript",
-                "Collapsed filters"
-                ]
-        });
-        this.projects.push({
             id: 5,
-            coverPhoto: "assets/img/Style_guide/cover3.jpg",
-            photoUrl: ["assets/img/Style_guide/cover3.jpg",
-                "assets/img/Style_guide/colors.jpg",
-                "assets/img/Style_guide/buttons.jpg",
-                "assets/img/Style_guide/typography.jpg",
-                "assets/img/Style_guide/screen_breaks.jpg",
-                "assets/img/Style_guide/sketch_2.jpg"],
-            title: "Style guide development",
-            alt: "Style guide development",
-            description: ["Problem: No consistency in design",
-                "Solution: Created a design library for designers and developers",
-                "Elements: Colors, Buttons, Typography, Spaces, Shapes and Forms, Checkboxes, and Radio buttons, icons.",
-                "Components: Login form, Toast massages, 404 page, product item.",
-                "Result: -Fully functional cloud-based Sketch library for fast hi-fi prototyping by Designers.",
-                "-CSS and JS library inside the frontend project for inbuild styles. The element gets CSS style automaticaly based on the aplied HTML classes to this element.",
-                "-A landing page with all use cases of elements and components coded and ready to be copied and pasted in the code by developers",
-                "Timeline and team: 2 months, 2 interaction engineers"],
-            projectTags: ["Design language development",
-                "Responsive design",
-                "Core components design",
-                "Sketch",
-                "HTML",
-                "SASS",
-                "JavaScript",
-                "JSP"]
+            coverPhoto: "assets/img/Andeor.jpg",
+            photoUrl : ["assets/img/Andeor.jpg", "assets/img/andeor2.jpg", "assets/img/andeor3.jpg" ],
+            title: "Dance School web-site design",
+            alt: "Dance School Site",
+            description: ["Responsive design and layout for a dancing school. Made in dark colours with the use of black and white photos to stand out the chamber theater atmosphere. You will find the main information on the site about dancing classes, groups and projects, reviews, photos, and a contact form."],
+            projectTags : ["Dancing school web-design",
+            "Responsive design and layout",
+            "Dark interface",
+            "One page site",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap"]
         });
         this.projects.push({
             id: 4,
@@ -203,6 +231,28 @@ export class ProjectsService {
             "HTML",
             "SASS"]
         });
+
+        this.projects.push({
+            id: 3,
+            coverPhoto: "assets/img/penenza_cover.jpg",
+            photoUrl : ["assets/img/penenza_cover.jpg", "assets/img/penenza1.png", "assets/img/penenza2.png"],
+            title: "Finance platform UX and UI design",
+            alt: "Finance platform UX and UI design",
+            description: ["Penenza is a russian project to connect governmental tender investors and borrowers without banks.",
+                "My role as an UX and UI designer was to create a self explanatory investor account and financial detalization sheet",
+                "Specific of the design is that money flow can have 3 states:",
+                "1. accrued interest",
+                "2. paid out",
+                "3. awaiting payment",
+                "4. fully paid",
+                "My job was to simplify for an investor visual definition of these payment states.",
+                "To create the UI I used Figma this time."
+                ],
+            projectTags : ["Finance Platform",
+            "UI in Figma",
+            "Customer dashboard design"
+            ]
+        });
         // this.projects.push({
         //     id: 5,
         //     photoUrl : ["assets/img/pionica1.jpg", "assets/img/pionica2.jpg", "assets/img/pionica3.jpg", "assets/img/pionica4.jpg"],
@@ -216,7 +266,7 @@ export class ProjectsService {
         //     "AdobePhotoshop"]
         // });
         this.projects.push({
-            id: 3,
+            id: 2,
             coverPhoto: "assets/img/phonetemplate2.gif",
             photoUrl : ["assets/img/phonetemplate2.gif", "assets/img/shoppingquest1.jpg", "assets/img/shoppingquest2.jpg"],
             title: "Interaction design",
@@ -238,23 +288,12 @@ export class ProjectsService {
         //     "Wedding invitation",
         //     "AdobePhotoshop"]
         // });
-        this.projects.push({
-            id: 2,
-            coverPhoto: "assets/img/1.jpg",
-            photoUrl : ["assets/img/1.jpg","assets/img/4.jpg", "assets/img/3.jpg","assets/img/2.jpg"],
-            title: "E-commerce site Design",
-            alt: "E-commerce site Nicetop photo",
-            description: ["Nicetop.ru is a Russian e-commerce site for a woman, man, and children fashion. The site is made in white, black and ight green colors. The design foresees a desktop and a mobile layout. The design solution is based on the project prescription from a stakeholder and consists of all core elements and site pages namely Home page, Results page, Brand page, Item detail page, and others. Many complementary sectors like delivery, payment, personal account sections, and a page with size tables were also developed during the project."],
-            projectTags : ["Design language development",
-            "Responsive design",
-            "Core compoents design",
-            "Mobile Filters",
-            "Grid Item and a quick viw",
-            "Home page, Results page, Item detail page design",
-            "white interface with black and green accents",
-            "E-commerce design",
-            "AdobePhotoshop"]
-        });
+
+
+
+
+
+
         this.projects.push({
             id: 1,
             coverPhoto: "assets/img/Marcopolo.jpg",
